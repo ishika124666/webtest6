@@ -41,7 +41,7 @@ app.get('/profile', isAuthenticated, (req, res) => {
 
 // Route to login (For demonstration purposes)
 app.get('/login', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views', 'login.html'));
+  res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
 app.post('/login', (req, res) => {
